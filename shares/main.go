@@ -5,6 +5,6 @@ import (
 )
 
 func main() {
-	http.Handle("/", http.FileServer(http.Dir("template")))
+	http.Handle("/", http.FileServer(http.Dir("template/echarts")))
 	http.ListenAndServe(":80", nil)
 }
